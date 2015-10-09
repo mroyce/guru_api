@@ -17,6 +17,7 @@ def create_test_user(email='test@example.com', password='test', first_name='Test
     create_kwargs.update(kwargs)
     return User.objects.create_user(**create_kwargs)
 
+
 def create_test_image(filename='test.png', size=(160, 160), color='green'):
     """
     Create and return a test image as a ContentFile

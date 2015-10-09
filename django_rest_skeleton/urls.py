@@ -15,7 +15,7 @@ router = DefaultRouter()
 router.register(r'users', UserViewSet)
 
 # Construct URLs
-urlpatterns = [
+urlpatterns = patterns(
 	'',
 
 	# API registration
@@ -23,7 +23,7 @@ urlpatterns = [
 
 	# Django admin views
     url(r'^api-admin/', include(admin.site.urls)),
-]
+)
 
 # DEBUG mode only URLs
 if settings.DEBUG:

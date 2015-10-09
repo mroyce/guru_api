@@ -12,14 +12,10 @@ class UserSerializer(serializers.ModelSerializer):
 
         fields = (
             'id',
-            'created_at',
-            'last_updated',
             'email',
             'password',
             'first_name',
             'last_name',
-            'gender',
-            'profile_picture',
         )
         
         extra_kwargs = {

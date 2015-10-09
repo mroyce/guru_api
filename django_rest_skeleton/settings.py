@@ -172,7 +172,7 @@ DEFAULT_FILE_STORAGE = os.environ.get('DEFAULT_FILE_STORAGE', 'django.core.files
 # http://www.django-rest-framework.org/api-guide/settings/
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': (
-        'django_rest_skeleton.core.auth.jwt.JWTAuthentication',
+        # 'django_rest_skeleton.core.auth.jwt.JWTAuthentication',
     ),
 
     'DEFAULT_PERMISSION_CLASSES': (

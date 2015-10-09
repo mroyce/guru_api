@@ -1,4 +1,4 @@
-from django.confg import settings
+from django.conf import settings
 
 from rest_framework.permissions import BasePermission, SAFE_METHODS
 

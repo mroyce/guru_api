@@ -4,8 +4,8 @@ import shutil
 from django.core.management.base import BaseCommand
 from django.conf import settings
 
-from ..models import User
-from ..tests.helpers import create_test_user
+from ...models import User
+from ...tests.helpers import create_test_user
 
 
 class Command(BaseCommand):

@@ -5,6 +5,8 @@ from django.conf.urls.static import static
 
 from rest_framework.routers import DefaultRouter
 
+from django_rest_skeleton.core.auth.jwt import JWTLoginView, JWTSignUpView
+
 from django_rest_skeleton.core.views import UserViewSet
 
 
@@ -23,6 +25,10 @@ urlpatterns = patterns(
 
 	# Django admin views
     url(r'^api-admin/', include(admin.site.urls)),
+
+    # API Authentication
+    url(r'^api/auth/sign-up/', JWTSignUpView.as_view(), name='sign-up'),
+    url(r'^api/auth/login/', JWTLoginView.as_view(), name='login'),
 )
 
 # DEBUG mode only URLs

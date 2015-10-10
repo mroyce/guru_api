@@ -6,8 +6,8 @@ from django.utils.encoding import smart_text
 
 from rest_framework.authentication import BaseAuthentication, get_authorization_header
 
-from ..models import User
-from ..serializers import UserSerializer
+from ...models import User
+from ...serializers import UserSerializer
 
 
 LOGIN_SIGNUP_RESPONSE_USER_KEY = 'user'

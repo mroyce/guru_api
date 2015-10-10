@@ -3,7 +3,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 from .jwt import create_jwt_token, get_login_signup_response
-from ..serializers import UserSerializer
+from ...serializers import UserSerializer
 
 
 class JWTSignUpView(APIView):

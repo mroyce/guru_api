@@ -1,0 +1,13 @@
+-r requirements.txt
+
+decorator==4.0.10
+django-debug-toolbar==1.4
+ipdb==0.8.1
+ipython==4.2.0
+ipython-genutils==0.1.0
+pexpect==4.1.0
+pickleshare==0.7.2
+ptyprocess==0.5.1
+simplegeneric==0.8.1
+termcolor==1.1.0
+traitlets==4.2.1

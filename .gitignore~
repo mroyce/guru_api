@@ -1,6 +1,0 @@
-*.pyc
-.DS_Store
-logfile
-*.sqlite3
-media/
-venv/
